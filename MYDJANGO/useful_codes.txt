@@ -1,0 +1,34 @@
+安装内容及顺序：
+step1:python 3.6+
+step2:django 4.0+
+step3-1:vscode +django插件，然后配置
+step3-2:visual studio + python django框架配置
+step4:hello world
+step5: mysql 8.0+
+step6: naivecat / mysql workbench（二选一）
+
+
+
+常用命令如下：
+
+
+python -m pip install --upgrade pip
+where python
+pip3 install django
+pip3 uninstall django
+pip show django
+d:\myDjango>django-admin startproject mydjango  开始一个项目
+python manage.py runserver
+python manage.py migrate
+
+python manage.py startapp myDjangoApp 开始一个应用
+
+
+pip install django-pyodbc-azure
+
+
+//model变更
+python manage.py makemigrations
+python manage.py migrate
+python manage.py migrate myapp --fake 针对某个项目迁移
+python manage.py migrate AppName zero 重新迁移

@@ -1,0 +1,7 @@
+问题列表
+<!--https://www.runoob.com/django/django-template.html-->
+<ul>
+{% for item in datas %}
+    <li> {{ forloop.counter }}-- {{ item.question_text }}</li>
+{% endfor %}
+</ul>

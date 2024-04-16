@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>某某公司后台登录系统</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="order by dede58.com"/>
+		<meta name="keywords" content="Simple Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+</head>
+
+<body>
+    <h1>某某公司后台登录系统</h1>
+    <div class="container w3">
+        <h2>现在注册</h2>
+		<form action="#" method="post">
+          <!-- django默认在post请求加一个csrf_token值，不加{% csrf_token %}会报错 -->
+            {% csrf_token %}
+			<div class="username">
+				<span class="username" style="height:19px">用户:</span>
+				<input type="text" name="username" class="name" placeholder="" required>
+				<div class="clear"></div>
+			</div>
+			<div class="password-agileits">
+				<span class="username"style="height:19px">密码:</span>
+				<input type="password" name="password" class="password" placeholder="" required>
+				<div class="clear"></div>
+			</div>
+		<div class="password-agileits">
+				<span class="username"style="height:19px">重复密码:</span>
+				<input type="password" name="repassword" class="password" placeholder="" required>
+				<div class="clear"></div>
+			</div>
+			<div class="login-w3">
+                <!-- 错误信息 -->
+            
+					<input type="submit" class="login" value="Reg">
+			</div>
+			<div class="clear"></div>
+		</form>
+	</div>
+	<div class="footer-w3l">
+		<p> 某某公司后台登录系统</p>
+	</div>
+</body>
+</html>

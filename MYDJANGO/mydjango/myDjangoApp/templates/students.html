@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>性别</td>
+        <td>年纪</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in student_queryset %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.gender }}</td>
+            <td>{{ student.grade }}</td>
+        </tr>
+    {% endfor %}
+
+
+    </tbody>
+</table>
+</body>
+</html>
